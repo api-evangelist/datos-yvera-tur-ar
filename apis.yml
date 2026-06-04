@@ -1,0 +1,58 @@
+aid: datos-yvera-tur-ar
+name: Datos Turismo y Deportes Argentina
+description: >-
+  Datos Turismo y Deportes Argentina is a government agency open-data portal for Argentina running CKAN.
+  It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 15 datasets,
+  supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a
+  consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
+kind: government
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/datos-yvera-tur-ar/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - DCAT
+  - Government Data
+  - Government Agency
+  - Argentina
+created: '2026-06-04'
+modified: '2026-06-04'
+specificationVersion: '0.19'
+apis:
+  - aid: datos-yvera-tur-ar:catalog
+    name: Datos Turismo y Deportes Argentina CKAN Action API
+    description: >-
+      CKAN Action API for Datos Turismo y Deportes Argentina, a consistent JSON-over-HTTP interface over a catalog of 15 datasets. Standard actions include package_search, package_show, package_list, organization_list, group_list, tag_list, and resource_search; datastore_search is available where the DataStore extension is enabled. Base URL https://datos.yvera.tur.ar/api/3/action/.
+    humanURL: https://datos.yvera.tur.ar
+    baseURL: https://datos.yvera.tur.ar/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - REST
+      - JSON
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/latest/api/
+      - type: Website
+        url: https://datos.yvera.tur.ar
+      - type: x-api-endpoint
+        url: https://datos.yvera.tur.ar/api/3/action/status_show
+common:
+  - type: Website
+    url: https://datos.yvera.tur.ar
+  - type: Documentation
+    url: https://docs.ckan.org/en/latest/api/
+  - type: Plans
+    url: plans/datos-yvera-tur-ar-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/datos-yvera-tur-ar-rate-limits.yml
+  - type: FinOps
+    url: finops/datos-yvera-tur-ar-finops.yml
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
