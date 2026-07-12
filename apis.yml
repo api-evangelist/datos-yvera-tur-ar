@@ -41,6 +41,8 @@ apis:
       - type: x-api-endpoint
         url: https://datos.yvera.tur.ar/api/3/action/status_show
 common:
+  - type: DomainSecurity
+    url: security/datos-yvera-tur-ar-domain-security.yml
   - type: Website
     url: https://datos.yvera.tur.ar
   - type: Documentation
